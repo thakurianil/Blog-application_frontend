@@ -45,7 +45,7 @@ const apiProcessor = async ({ method, url, data, headers }) => {
 };
 
 export const fetchPosts = async () => {
-  const obj = { method: "get", url: postEP + "?page=1&limit=10" };
+  const obj = { method: "get", url: postEP  };
   
   return await apiProcessor(obj);
 };
