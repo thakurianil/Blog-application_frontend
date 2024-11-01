@@ -11,9 +11,9 @@ const Footer = () => {
         <Row className="mt-3">
           <Col className="text-center">
             <p>
-              &copy; {new Date().getFullYear()} Blog App. All rights reserved.
+              &copy; {new Date().getFullYear()} Welcome to Blog App.
               <br />
-              {user ? "Welcome " + user : ""}
+              {user ?   user : ""}
             </p>
           </Col>
         </Row>
