@@ -1,5 +1,5 @@
 import axios from "axios";
-const rootAPI = import.meta.env.VITE_APP_URL;
+const rootAPI = import.meta.env.VITE_API_URL;
 const postEP = rootAPI + "/post";
 const authEP = rootAPI + "/auth";
 const userEP = rootAPI + "/user";
@@ -70,6 +70,17 @@ export const fetchMyPost = async () => {
 
   return await apiProcessor(obj);
 };
+
+export const signup = async (formData) => {
+
+  const obj = {
+    method: "post",
+    url: authEP + "/signup",
+    data: formData,
+  };
+
+  return await apiProcessor(obj);
+}
 
 export const createPost = async (postData) => {
   let token = getJWTtoken();
