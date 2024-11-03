@@ -1,5 +1,5 @@
 import axios from "axios";
-const rootAPI = import.meta.env.VITE_API_URL;
+const rootAPI = "https://blog-application-backend-api-1.onrender.com/api/v1";
 const postEP = rootAPI + "/post";
 const authEP = rootAPI + "/auth";
 const userEP = rootAPI + "/user";
